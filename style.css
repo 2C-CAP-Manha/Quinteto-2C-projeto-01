@@ -202,3 +202,6 @@ padding: 4rem;
 gap: 3rem;
 }
 
+.cartao.active .cartao__conteudo {
+transform: rotateY(180deg);
+}

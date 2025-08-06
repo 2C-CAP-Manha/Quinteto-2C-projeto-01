@@ -70,3 +70,107 @@
 <script src=”app.js”></script>
 <script src=”perguntas.js”></script>
 
+<footer>
+
+<p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
+
+</footer>
+<script src=”perguntas.js”></script>
+<script src=”app.js”></script>
+<script src=”perguntas.js”></script>
+
+function criaCartao(categoria, pergunta, resposta) {
+
+let container = document.getElementById(‘container’);
+let cartao = document.createElement(‘article’)
+cartao.className = ‘cartao’
+}
+
+<section id=”container”>
+
+<article class=”cartao”>
+<div class=”cartao__conteudo”>
+<h3>Programação</h3>
+<div class=”cartao__conteudo__pergunta”>
+
+<p>O que é JavaScript?</p>
+
+</div>
+<div class=”cartao__conteudo__resposta”>
+<p>O JavaScript é uma linguagem de
+
+programação</p>
+
+</div>
+</div>
+</article>
+</section>
+
+cartao.innerHTML = `
+<div class=”cartao__conteudo”>
+<h3>Programação</h3>
+<div class=”cartao__conteudo__pergunta”>
+<p>O que é JavaScript?</p>
+</div>
+<div class=”cartao__conteudo__resposta”>
+<p>O JavaScript é uma linguagem de programação</p>
+</div>
+</div>
+`
+
+container.appendChild(cartao)
+
+<section id=”container”>
+<!-- <article class=”cartao”>
+
+<div class=”cartao__conteudo”>
+<h3>Programação</h3>
+<div class=”cartao__conteudo__pergunta”>
+
+<p>O que é JavaScript?</p>
+
+</div>
+<div class=”cartao__conteudo__resposta”>
+<p>O JavaScript é uma linguagem de
+
+programação</p>
+
+</div>
+</div>
+</article> -->
+</section>
+
+cartao.innerHTML = `
+<div class=”cartao__conteudo”>
+<h3>${categoria}</h3>
+<div class=”cartao__conteudo__pergunta”>
+<p>${pergunta}</p>
+</div>
+<div class=”cartao__conteudo__resposta”>
+<p>${resposta}</p>
+</div>
+</div>
+`
+
+criaCartao(
+‘Língua Inglesa’,
+‘Como se diz oi em Inglês?’,
+‘Oi em inglês se diz HI (RAI)’
+)
+
+let respostaEstaVisivel = false
+function viraCartao () {
+respostaEstaVisivel = !respostaEstaVisivel
+}
+
+function viraCartao () {
+respostaEstaVisivel = !respostaEstaVisivel
+cartao.classList.toogle(‘active’, respostaEstaVisivel)
+}
+
+let respostaEstaVisivel = false
+function viraCartao () {
+respostaEstaVisivel = !respostaEstaVisivel
+cartao.classList.toggle(‘active’, respostaEstaVisivel)
+}
+cartao.addEventListener(‘click’, viraCartao)
