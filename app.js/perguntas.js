@@ -22,3 +22,5 @@ Uma função é um bloco de código que executa alguma tarefa
 function criaCartao(categoria, pergunta, resposta) {
 console.log(categoria, pergunta, resposta);
 }
+
+<!-- <article class=”cartao”>
