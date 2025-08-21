@@ -3,177 +3,29 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="assets/style.css">
+    <title>Flashcard</title>
 </head>
 <body>
     <main>
-      <section id="container">
-          <article class="cartão">
-            <div class="cartão_conteudo">
-                <h3>Como deixar um macaco pelado</h3>
-                <div class="cartão_pergunta">
-                   Usam algum tipo de maquina?
-                   <div class="cartão_conteudo_resposta">
-                    Sim, usamos maquinas de barbear e até gilettes.
-                   </div>
+        <section id="container">
+             <!-- <article class="cartao">
+                <div class="cartao__conteudo">
+                    <h3>Programação</h3>
+                    <div class="cartao__conteudo__pergunta">
+                       <p>O que é JavaScript?</p>
+                    </div>
+                    <div class="cartao__conteudo__resposta">
+                       <p>O JavaScript é uma linguagem de programação.</p>
+                    </div>
                 </div>
-            </div>
-          </article>
-          <article class="cartão">
-            <div class="cartão_conteudo">
-                <h3>vocês já comeram tacacá?</h3>
-                <div class="cartão_pergunta">
-                   Como vocês fazem?
-                   <div class="cartão_conteudo_resposta">
-                    com folhas, caldo, camarão e goma
-                   </div>
-                </div>
-            </div>
-          </article>
+             </article> -->
       </section>
-
     </main>
     <footer>
-
+        <p>Projeto desenvolvido para testar seus conhecimentos em história</p>
     </footer>
+    <script src="app.js"></script>
     <script src="perguntas.js"></script>
-    <script src="./app.js/app.js"></script>
 </body>
 </html>
-
-<article class=”cartao”>
-<div class=”cartao__conteudo”>
-<h3>Geografia</h3>
-<div class=”cartao__conteudo__pergunta”>
-<p>Qual a capital da França?</p>
-</div>
-<div class=”cartao__conteudo__resposta”>
-<p>A capital da França é Paris</p>
-</div>
-</div>
-</article>
-
-<article class=”cartao”>
-<div class=”cartao__conteudo”>
-<h3>Geografia</h3>
-<div class=”cartao__conteudo__pergunta”>
-<p>Qual a capital da França?</p>
-</div>
-<div class=”cartao__conteudo__resposta”>
-<p>A capital da França é Paris</p>
-</div>
-</div>
-</article>
-
-<footer>
-
-<p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
-</footer>
-<script src=”app.js”></script>
-<script src=”perguntas.js”></script>
-
-<footer>
-
-<p>Projeto desenvolvido pela Alura, sem fins lucrativos</p>
-
-</footer>
-<script src=”perguntas.js”></script>
-<script src=”app.js”></script>
-<script src=”perguntas.js”></script>
-
-function criaCartao(categoria, pergunta, resposta) {
-
-let container = document.getElementById(‘container’);
-let cartao = document.createElement(‘article’)
-cartao.className = ‘cartao’
-}
-
-<section id=”container”>
-
-<article class=”cartao”>
-<div class=”cartao__conteudo”>
-<h3>Programação</h3>
-<div class=”cartao__conteudo__pergunta”>
-
-<p>O que é JavaScript?</p>
-
-</div>
-<div class=”cartao__conteudo__resposta”>
-<p>O JavaScript é uma linguagem de
-
-programação</p>
-
-</div>
-</div>
-</article>
-</section>
-
-cartao.innerHTML = `
-<div class=”cartao__conteudo”>
-<h3>Programação</h3>
-<div class=”cartao__conteudo__pergunta”>
-<p>O que é JavaScript?</p>
-</div>
-<div class=”cartao__conteudo__resposta”>
-<p>O JavaScript é uma linguagem de programação</p>
-</div>
-</div>
-`
-
-container.appendChild(cartao)
-
-<section id=”container”>
-<!-- <article class=”cartao”>
-
-<div class=”cartao__conteudo”>
-<h3>Programação</h3>
-<div class=”cartao__conteudo__pergunta”>
-
-<p>O que é JavaScript?</p>
-
-</div>
-<div class=”cartao__conteudo__resposta”>
-<p>O JavaScript é uma linguagem de
-
-programação</p>
-
-</div>
-</div>
-</article> -->
-</section>
-
-cartao.innerHTML = `
-<div class=”cartao__conteudo”>
-<h3>${categoria}</h3>
-<div class=”cartao__conteudo__pergunta”>
-<p>${pergunta}</p>
-</div>
-<div class=”cartao__conteudo__resposta”>
-<p>${resposta}</p>
-</div>
-</div>
-`
-
-criaCartao(
-‘Língua Inglesa’,
-‘Como se diz oi em Inglês?’,
-‘Oi em inglês se diz HI (RAI)’
-)
-
-let respostaEstaVisivel = false
-function viraCartao () {
-respostaEstaVisivel = !respostaEstaVisivel
-}
-
-function viraCartao () {
-respostaEstaVisivel = !respostaEstaVisivel
-cartao.classList.toogle(‘active’, respostaEstaVisivel)
-}
-
-let respostaEstaVisivel = false
-function viraCartao () {
-respostaEstaVisivel = !respostaEstaVisivel
-cartao.classList.toggle(‘active’, respostaEstaVisivel)
-}
-cartao.addEventListener(‘click’, viraCartao)
